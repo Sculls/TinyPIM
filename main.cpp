@@ -9,13 +9,13 @@ int main()
     a.lastname("Smith");
     a.firstname("Joan");
     a.phone("(617) 555-9876");
-    a.address("The Very Big Corporation\nSomewhere, MA 01000");
+    a.address("The Very Big Corporation Somewhere, MA 01000");
 
     Address b;
     b.lastname("Adams");
     b.firstname("Abigale");
     b.phone("(212) 555-3734");
-    b.address("743 Broadway\nNew York, NY");
+    b.address("743 Broadway New York, NY");
 
     Address c;
     c.lastname("Neighborhood Video");
@@ -32,7 +32,7 @@ int main()
     d.lastname("Adams");
     d.firstname("Abigale");
     d.phone("(508) 555-4466");
-    d.address("1 Small St.\nMarlboro, MA 02100");
+    d.address("1 Small St. Marlboro, MA 02100");
 
     // Insert address with duplicate name
     int d_id = book.insertAddress(d);
@@ -45,7 +45,7 @@ int main()
     book.print();
 
     // Replace an address
-    c.address("22 Main St.\nMy town, MA 02200");
+    c.address("22 Main St. My town, MA 02200");
     book.replaceAddress(c, c_id);
     std::cout << "*** After replacing Neighborhood Video ***\n";
     book.print();
