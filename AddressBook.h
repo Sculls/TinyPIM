@@ -6,6 +6,7 @@
 
 class AddressBook
 {
+public:
     AddressBook();
     ~AddressBook();
 
